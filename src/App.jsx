@@ -10,7 +10,11 @@ const App = () => {
     <BrowserRouter basename='/ChimingBirds/'>
       <Navbar />
       <Routes>
-        <Route exact path="/" element={<Cards /> } />
+        <Route exact path="/" element={
+          <>
+            < Cards />,
+            <AddBird />
+          </> } />
         <Route exact path="/bird/:id" element={ <Bird/>} />
         <Route exact path="/addbird" element={ <AddBird/>} />
       </Routes>
