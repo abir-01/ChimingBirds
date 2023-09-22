@@ -6,7 +6,7 @@ import Bird from './components/Bird'
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/ChimingBirds/'>
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Cards /> } />
