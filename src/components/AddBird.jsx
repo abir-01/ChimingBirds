@@ -37,7 +37,7 @@ const AddBird = () => {
 
     const addnewbird = (e) => {
         e.preventDefault();
-        axios.post("http://localhost:5001/api/birds/addbird", bodyParameters)
+        axios.post("https://chiming-birds-backend.onrender.com/api/birds/addbird", bodyParameters)
             .then((res) => {
                 console.log(res.data);
                 setadded(1);
