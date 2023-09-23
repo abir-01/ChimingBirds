@@ -8,7 +8,7 @@ const Navbar = () => {
           <div className="container-fluid d-flex bg-black ">
               <Link className="navbar-brand mx-auto text-light" to="/"><h1 className='px-4 pt-5 pb-3 position-relative'>
                   <img src={bird} alt="" className='position-absolute bird' />
-                  <p className='title'>Chiming Birds</p>
+                  <p className='title'>Chiming Chirps</p>
               </h1></Link>
               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span className="navbar-toggler-icon"></span>
