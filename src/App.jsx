@@ -4,6 +4,8 @@ import Cards from './components/Cards'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Bird from './components/Bird'
 import AddBird from './components/AddBird'
+import Birds from './components/Birds'
+import AudioRecord from './components/AudioRecord'
 
 const App = () => {
   return (
@@ -12,8 +14,9 @@ const App = () => {
       <Routes>
         <Route exact path="/" element={
           <>
-            < Cards />,
-            <AddBird />
+            <AudioRecord/>,
+            < Birds />
+            {/* <AddBird /> */}
           </> } />
         <Route exact path="/bird/:id" element={ <Bird/>} />
         <Route exact path="/addbird" element={ <AddBird/>} />

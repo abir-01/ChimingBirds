@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
       
           <nav className="navbar navbar-expand-lg bg-body-tertiary m-0 p-0">
           <div className="container-fluid d-flex bg-black ">
-              <a className="navbar-brand mx-auto text-light" href="#"><h1 className='p-4'>Chiming Birds</h1></a>
+              <Link className="navbar-brand mx-auto text-light" to="/"><h1 className='p-4'>Chiming Birds</h1></Link>
               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span className="navbar-toggler-icon"></span>
               </button>
